@@ -29,6 +29,7 @@ html {
     min-height: 583px;
     align-items: flex-start;
     background: linear-gradient(90deg, #ebfffc 0%, #26d0ce 100%);
+    position: relative;
   }
 }
 
@@ -41,6 +42,21 @@ html {
   font-size: 10px;
   text-decoration: none;
   color: #00205b;
+}
+
+.quarvy__header-phone-desktop {
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .quarvy__header-phone-desktop {
+    display: initial;
+    height: 568px;
+    width: 262px;
+    position: absolute;
+    right: 10%;
+    bottom: -90px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -218,6 +234,12 @@ html {
 @media screen and (min-width: 768px) {
   .quarvy__hero {
     background-image: url("./assets/background_tablet.png");
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .quarvy__hero {
+    background-image: url("./assets/background__desktop.png");
   }
 }
 
